@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "name": "Mirage Client",
+  "id": "meteor-client",
+  "version": "${version}",
+  "description": "Based utility mod.",
+  "authors": [
+    "iDucky__ [Neo]",
+    "the Mirage community ♥"
+  ],
+  "contact": {
+    "homepage": "https://github.com/iDucky-0/MirageClient",
+    "issues": "https://github.com/iDucky-0/MirageClient/issues",
+    "discord": "https://discord.gg/FEMHghkZnR"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/meteor-client/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "meteordevelopment.meteorclient.MeteorClient"
+    ]
+  },
+  "mixins": [
+    "meteor-client.mixins.json",
+    "meteor-client-baritone.mixins.json",
+    "meteor-client-indigo.mixins.json",
+    "meteor-client-sodium.mixins.json",
+    "meteor-client-canvas.mixins.json",
+    "meteor-client-lithium.mixins.json",
+    "meteor-client-indium.mixins.json",
+    "meteor-client-viafabricplus.mixins.json"
+  ],
+  "accessWidener": "meteor-client.accesswidener",
+  "custom": {
+    "meteor-client:devbuild": "${devbuild}",
+    "meteor-client:color": "70,170,255",
+    "meteor-client:commit": "${commit}",
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/FEMHghkZnR"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${minecraft_version}"],
+    "fabricloader": ">=${loader_version}"
+  },
+  "breaks": {
+    "morechathistory": "*"
+  }
+}
