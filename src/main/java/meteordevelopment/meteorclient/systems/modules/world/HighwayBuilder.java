@@ -337,15 +337,6 @@ public class HighwayBuilder extends Module {
         super(Categories.World, "highway-builder", "Automatically builds highways.");
     }
 
-    /*todo
-        - separate digging and paving more effectively
-        - better inventory management
-            - getting echests and picks from shulker boxes - refactor echest blockade to be more general purpose?
-            - access to your ec
-        - separate walking forwards from the current state to speed up actions
-        - fix issues related to y level changes
-     */
-
     @Override
     public void onActivate() {
         dir = HorizontalDirection.get(mc.player.getYaw());

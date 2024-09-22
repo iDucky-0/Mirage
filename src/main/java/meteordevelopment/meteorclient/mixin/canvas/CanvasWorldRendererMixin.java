@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;*/
 
-// TODO: 1.19.3
+//
 //@Mixin(value = CanvasWorldRenderer.class, remap = false)
 public abstract class CanvasWorldRendererMixin {
     /*@ModifyVariable(method = "renderWorld", at = @At("LOAD"), name = "blockOutlines")

@@ -324,7 +324,7 @@ public class Jesus extends Module {
     private boolean lavaIsSafe() {
         if (!dipIfFireResistant.get()) return false;
         return mc.player.hasStatusEffect(StatusEffects.FIRE_RESISTANCE) && (mc.player.getStatusEffect(StatusEffects.FIRE_RESISTANCE).getDuration() > (15 * 20 * mc.player.getAttributeValue(EntityAttributes.GENERIC_BURNING_TIME)));
-        // todo verify
+        //
     }
 
     private boolean isOverLiquid() {

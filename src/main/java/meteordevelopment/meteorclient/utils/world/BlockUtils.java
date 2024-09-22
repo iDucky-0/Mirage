@@ -394,7 +394,7 @@ public class BlockUtils {
             speed *= k;
         }
 
-        if (mc.player.isSubmergedIn(FluidTags.WATER) /*fixme && !EnchantmentHelper.hasAquaAffinity(mc.player)*/) {
+        if (mc.player.isSubmergedIn(FluidTags.WATER)) {
             speed /= 5.0F;
         }
 

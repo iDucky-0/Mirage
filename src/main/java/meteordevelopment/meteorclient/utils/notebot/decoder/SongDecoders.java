@@ -25,7 +25,7 @@ public class SongDecoders {
     static {
         registerDecoder("nbs", new NBSSongDecoder());
         registerDecoder("txt", new TextSongDecoder());
-        // TODO Maybe a midi decoder in the future
+        //
     }
 
     public static void registerDecoder(String extension, SongDecoder songDecoder) {
